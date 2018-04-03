@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "typetest.h"
+
 int parseArray(double *array, int length);
 
 
@@ -22,8 +24,9 @@ struct bsd {
 union Data {
     int i;
     float f;
-    char str[20];
+    char str[15];
 } data;
+
 
 void printBook(struct Books *book);
 
@@ -31,9 +34,18 @@ void main_test();
 
 void main_test1();
 
+
 int main() {
     printf("Hello, World!\n");
-    
+    data.f = 10.0;
+    data.i = 1;
+    strcpy(data.str, "hello");
+    printf("memory size %d \n", sizeof(data));
+    printf("data value %s \n", data.str);
+
+    printf("int size %f \n", sizeof(float));
+
+    printtest();
 
     return 0;
 }
@@ -57,6 +69,7 @@ void main_test1() {
     bit.a = 1;
     bit.b = 8;
     printf("%d,%d\n", bit.a, bit.b);
+
 }
 
 int parseArray(double *array, int length) {
