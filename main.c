@@ -2,8 +2,8 @@
 #include <string.h>
 
 #include "typetest.h"
-
 #include "pre.h"
+#include "testtype.h"
 
 int parseArray(double *array, int length);
 
@@ -36,13 +36,13 @@ void main_test();
 
 void main_test1();
 
-
 void typetest();
 
 int main() {
     printf("Hello, World!\n");
 //    typetest();
-    testpre();
+//    testpre();
+    testtype();
     return 0;
 }
 
