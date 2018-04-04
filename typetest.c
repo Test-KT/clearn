@@ -8,6 +8,9 @@
 #define TRUE 1
 #define FALSE 0
 
+void read(const char *str);
+
+void write(const char *str, const char *msg);
 
 void printtest() {
     char c[100];
@@ -24,9 +27,33 @@ void printtest() {
 
 
     printf("print new number");
-    scanf("%s %d",c,&i);
+    scanf("%s %d", c, &i);
 
-    printf( "\nYou entered: %s %d ", c, i);
+    printf("\nYou entered: %s %d ", c, i);
     printf("\n");
+
+}
+
+
+void testFile() {
+    FILE *file;
+    char buff[255];
+    file = fopen("/Users/lishoulin/Desktop/OpenCV/untitled/test.txt", "r");
+//    fputs("this is testing for fput \n",file);
+    fgets(buff, 255, file);
+    printf("file value: %s \n", buff);
+    fclose(file);
+}
+
+
+void read(const char *str) {
+    FILE *f;
+    char *buff = NULL;
+    f = fopen(str, "r");
+    fgets(buff, 255, f);
+    fclose(f);
+}
+
+void write(const char *str, const char *msg) {
 
 }

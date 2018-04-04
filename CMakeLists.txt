@@ -3,4 +3,4 @@ project(untitled C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(untitled main.c typetest.c typetest.h)
+add_executable(untitled main.c typetest.c typetest.h pre.h pre.c)

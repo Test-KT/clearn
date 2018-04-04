@@ -3,6 +3,8 @@
 
 #include "typetest.h"
 
+#include "pre.h"
+
 int parseArray(double *array, int length);
 
 
@@ -35,19 +37,24 @@ void main_test();
 void main_test1();
 
 
+void typetest();
+
 int main() {
     printf("Hello, World!\n");
-    data.f = 10.0;
-    data.i = 1;
-    strcpy(data.str, "hello");
-    printf("memory size %d \n", sizeof(data));
-    printf("data value %s \n", data.str);
-
-    printf("int size %f \n", sizeof(float));
-
-    printtest();
-
+//    typetest();
+    testpre();
     return 0;
+}
+
+void typetest() {//    data.f = 10.0;
+//    data.i = 1;
+//    strcpy(data.str, "hello");
+//    printf("memory size %d \n", sizeof(data));
+//    printf("data value %s \n", data.str);
+//
+//    printf("int size %f \n", sizeof(float));
+
+    testFile();
 }
 
 void main_test1() {
@@ -149,8 +156,8 @@ void main_test() {
     strcat(str1, str2);
 
 
-    printf("str3 :%s len:%d \n", str3, strlen(str3));
-    printf("str3 :%s len:%d \n", str1, strlen(str1));
+    printf("str3 :%s len:%lu \n", str3, strlen(str3));
+    printf("str3 :%s len:%lu \n", str1, strlen(str1));
 
 
     struct Books Book1;
