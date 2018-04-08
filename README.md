@@ -1,2 +1,2 @@
 # clearn
-Learn c language 打卡
+Learn c language and c++ language 打卡
