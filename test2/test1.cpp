@@ -13,6 +13,8 @@ void testenum();
 
 void hello();
 
+
+void dxPrint(const char *str);
 enum Week {
     Mon = 1,
     Tus = 2,
@@ -28,7 +30,7 @@ int main() {
 
     testenum();
 
-
+    dxPrint("abcdef");
     return 0;
 }
 
@@ -65,4 +67,14 @@ void testtype() {
 
 
     cout << CHAR_MIN << "///" << CHAR_MAX << endl;
+}
+
+void dxPrint(const char *str) {
+    if (*str == '\0') {
+        char *s = "abc";
+        printf("\nss %c\n", *s);
+        return;
+    }
+    dxPrint(str + 1);
+    printf("%c", *str);
 }
