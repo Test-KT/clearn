@@ -10,4 +10,9 @@ cmake_minimum_required(VERSION 3.9)
 project(untitled)
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(untitled test2/test1.cpp)
+set(src1 test2/test1.cpp )
+set(src2 lsl_sort.c )
+set(src3 channel.cpp channel1.cpp)
+
+
+add_executable(untitled ${src3})

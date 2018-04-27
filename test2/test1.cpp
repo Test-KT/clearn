@@ -15,6 +15,7 @@ void hello();
 
 
 void dxPrint(const char *str);
+
 enum Week {
     Mon = 1,
     Tus = 2,
@@ -31,6 +32,9 @@ int main() {
     testenum();
 
     dxPrint("abcdef");
+    int a = 5, b = 7, c;
+    c = a++ + b;
+    printf("%d", c);
     return 0;
 }
 
