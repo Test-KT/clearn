@@ -4,10 +4,13 @@
 
 #include "channel.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
 bool equary(char *str1, char *str2);
+
+void open_file();
 
 int main() {
     char str1[] = "hello world \n";
@@ -55,6 +58,8 @@ int main() {
     chan.setLen(20);
     std::cout << chan.getLen() << endl;
 
+    open_file();
+
     return 0;
 }
 
@@ -62,3 +67,12 @@ bool equary(char *str1, char *str2) {
     int isSame = strcmp(str1, str2);
     return isSame == 0;
 }
+
+void open_file() {
+    char str[255];
+    ifstream file;
+    file.open("/Users/lishoulin/Desktop/OpenCV/clearn/test.txt");
+
+    cout << str << endl;
+}
+

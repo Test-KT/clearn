@@ -3,6 +3,7 @@
 //
 
 #include <stdio.h>
+#include <time.h>
 #include "lsl_sort.h"
 
 #define LEN 5
@@ -17,6 +18,7 @@ int main() {
     insert_sort();
     int *arr = returenarray();
     printf("%d \n", arr[0]);
+    zhizhen();
     return 0;
 }
 
@@ -41,4 +43,33 @@ void insert_sort() {
 int *returenarray() {
 
     return arrays;
+}
+
+union Data {
+    int i;
+    float f;
+    char str[20];
+}data;
+
+void zhizhen() {
+
+    int var;
+    int *ptr;
+    int **pptr;
+    var = 3000;
+    ptr = &var;
+    pptr = &ptr;
+
+
+    printf("%d \n", var);
+    printf("%d \n", *ptr);
+    printf("%d \n", **pptr);
+
+    void (*p)()=&insert_sort;
+
+    p();
+
+
+    union Data data;
+
 }

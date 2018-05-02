@@ -12,7 +12,8 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(src1 test2/test1.cpp )
 set(src2 lsl_sort.c )
-set(src3 channel.cpp channel1.cpp)
+set(src3 channel.cpp)
+set(src4 channel1.cpp)
 
 
-add_executable(untitled ${src3})
+add_executable(untitled ${src4})

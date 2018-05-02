@@ -6,3 +6,5 @@
 #define UNTITLED_LSL_SORT_H
 
 #endif //UNTITLED_LSL_SORT_H
+
+void zhizhen();
