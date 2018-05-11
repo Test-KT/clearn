@@ -3,9 +3,8 @@
 //
 
 #include "channel1.h"
-#include <iostream>
-#include <string>
-#include <streambuf>
+
+#include "queue.h"
 
 using namespace std;
 
