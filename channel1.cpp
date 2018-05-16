@@ -4,8 +4,6 @@
 
 #include "channel1.h"
 
-#include "queue.h"
-
 using namespace std;
 
 class fileManager1 : public filemanager {

@@ -14,6 +14,7 @@ set(src1 test2/test1.cpp )
 set(src2 lsl_sort.c )
 set(src3 channel.cpp)
 set(src4 channel1.cpp)
+set(src5 test3/list.c)
 
 
-add_executable(untitled ${src4})
+add_executable(untitled ${src5})
