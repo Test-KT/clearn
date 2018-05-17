@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h> //exit 函数
 #include <stdbool.h> //布尔值函数
+#include "ffmep.h"
 
 struct Arr {
     int *pBase;
@@ -40,6 +41,8 @@ int main() {
     append_arr(&arr,3);
 
     show_arr(&arr);
+
+    ffmep();
 
 
     return 0;
