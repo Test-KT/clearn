@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lishoulin/Desktop/OpenCV/clearn/test3/ffmep.c
+ffmep.h
+/Users/lishoulin/Desktop/OpenCV/clearn/test3/ffmep.h
+lwlog.h
+/Users/lishoulin/Desktop/OpenCV/clearn/test3/lwlog.h
+time.h
+-
+stdio.h
+-
+
+/Users/lishoulin/Desktop/OpenCV/clearn/test3/ffmep.h
+
+/Users/lishoulin/Desktop/OpenCV/clearn/test3/list.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+ffmep.h
+/Users/lishoulin/Desktop/OpenCV/clearn/test3/ffmep.h
+
+/Users/lishoulin/Desktop/OpenCV/clearn/test3/lwlog.h
+stdio.h
+-
+errno.h
+-
+string.h
+-
+

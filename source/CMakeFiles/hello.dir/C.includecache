@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lishoulin/Desktop/OpenCV/clearn/source/test.c
+stdlib.h
+-
+stdio.h
+-
+pthread/pthread.h
+-
+testramdom.h
+/Users/lishoulin/Desktop/OpenCV/clearn/source/testramdom.h
+
+/Users/lishoulin/Desktop/OpenCV/clearn/source/testramdom.c
+testramdom.h
+/Users/lishoulin/Desktop/OpenCV/clearn/source/testramdom.h
+time.h
+-
+
+/Users/lishoulin/Desktop/OpenCV/clearn/source/testramdom.h
+stdio.h
+-
+

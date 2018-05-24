@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lishoulin/Desktop/OpenCV/clearn/channel1.cpp
+channel1.h
+/Users/lishoulin/Desktop/OpenCV/clearn/channel1.h
+queue.h
+/Users/lishoulin/Desktop/OpenCV/clearn/queue.h
+
+/Users/lishoulin/Desktop/OpenCV/clearn/channel1.h
+fstream
+-
+iostream
+-
+
+/Users/lishoulin/Desktop/OpenCV/clearn/queue.h
+stdio.h
+-
+stdlib.h
+-
+
